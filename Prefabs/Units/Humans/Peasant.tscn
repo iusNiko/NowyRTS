@@ -1,0 +1,176 @@
+[gd_scene load_steps=25 format=3 uid="uid://c41pow1u17x25"]
+
+[ext_resource type="PackedScene" uid="uid://17psngl7bfa2" path="res://Prefabs/Units/Unit.tscn" id="1_0dhb1"]
+[ext_resource type="Texture2D" uid="uid://om5c1xh01gop" path="res://Art/Units/Humans/Peasant/PeasantAttack.png" id="2_8m67t"]
+[ext_resource type="Texture2D" uid="uid://cfu02sgp8gjs3" path="res://Art/Units/Humans/Peasant/PeasantIdle.png" id="3_dphki"]
+[ext_resource type="PackedScene" uid="uid://6qwew28rjv48" path="res://Prefabs/Abilities/Build.tscn" id="3_if5sr"]
+[ext_resource type="PackedScene" uid="uid://mm2qjues486o" path="res://Prefabs/Units/Humans/Structures/Barracks.tscn" id="4_2jro2"]
+[ext_resource type="Texture2D" uid="uid://bvneevw0chm16" path="res://Art/Units/Humans/Peasant/PeasantWalk.png" id="4_unkpr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ysea"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pas5b"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skdj4"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7ygm"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjfgl"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1x6l"]
+atlas = ExtResource("2_8m67t")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko55s"]
+atlas = ExtResource("3_dphki")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lw380"]
+atlas = ExtResource("3_dphki")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2e4r6"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjre6"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4iae"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7upvg"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5nes2"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eussi"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bawa7"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8reu"]
+atlas = ExtResource("4_unkpr")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c74br"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ysea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pas5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skdj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7ygm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjfgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1x6l")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko55s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lw380")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2e4r6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjre6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4iae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7upvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5nes2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eussi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bawa7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8reu")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ri8wr"]
+radius = 3.0
+
+[node name="Unit" instance=ExtResource("1_0dhb1")]
+_MaxLife = 30.0
+Life = 30.0
+ConstructionTime = 0.0
+IsHarvester = true
+Flags = PackedStringArray("peasant", "harvester")
+
+[node name="SelectionBox" parent="." index="0"]
+offset_left = -5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = 10.0
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_c74br")
+animation = &"walk"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.706293
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_ri8wr")
+
+[node name="Ability" parent="." index="4" instance=ExtResource("3_if5sr")]
+BuildingPrefab = ExtResource("4_2jro2")
+GoldCost = 215.0
+WoodCost = 100.0
+
+[node name="LifeBar" parent="." index="5"]
+offset_left = -5.0
+offset_top = -9.0
+offset_right = 35.0
+offset_bottom = 3.0

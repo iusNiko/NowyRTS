@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1rp7sdjw2ehq"]
+
+[ext_resource type="PackedScene" uid="uid://disp1cv42xqav" path="res://Prefabs/Abilities/Ability.tscn" id="1_thclu"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_lf1th"]
+script/source = "using System.Linq;
+using Godot;
+public partial class RightClick : Ability
+{
+	Unit Parent;
+
+    public override void _Ready()
+    {
+        Parent = GetParent<Unit>();
+		base._Ready();
+    }
+    public override void Effect()
+    {
+        
+    }
+}
+"
+
+[node name="MovementAbility" instance=ExtResource("1_thclu")]
+script = SubResource("CSharpScript_lf1th")
+Shortcut = "RightClick"
+HideButton = true
+EnableQuickcast = true
+QueueTime = 0.0
+IsAbilityWithTarget = true

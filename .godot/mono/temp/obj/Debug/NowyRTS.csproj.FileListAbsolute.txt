@@ -1,0 +1,68 @@
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/NowyRTS.deps.json
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/NowyRTS.runtimeconfig.json
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/NowyRTS.dll
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/NowyRTS.pdb
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.csproj.AssemblyReference.cache
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.GeneratedMSBuildEditorConfig.editorconfig
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.AssemblyInfoInputs.cache
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.AssemblyInfo.cs
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.csproj.CoreCompileInputs.cache
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.csproj.CopyComplete
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.dll
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/refint/NowyRTS.dll
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.pdb
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/NowyRTS.genruntimeconfig.cache
+/home/niko/Dokumenty/Godot/NowyRTS/.godot/mono/temp/obj/Debug/ref/NowyRTS.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.deps.json
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.runtimeconfig.json
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.pdb
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.AssemblyReference.cache
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfoInputs.cache
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfo.cs
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.CoreCompileInputs.cache
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\refint\NowyRTS.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.pdb
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.genruntimeconfig.cache
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\ref\NowyRTS.dll
+C:\Users\mniko\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.Up2Date
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.deps.json
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.runtimeconfig.json
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.dll
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.pdb
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.AssemblyReference.cache
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfoInputs.cache
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfo.cs
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.CoreCompileInputs.cache
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.Up2Date
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.dll
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\refint\NowyRTS.dll
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.pdb
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.genruntimeconfig.cache
+D:\Dane\Documents\Godot Projects\NowyRTS\.godot\mono\temp\obj\Debug\ref\NowyRTS.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.deps.json
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.runtimeconfig.json
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\NowyRTS.pdb
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.AssemblyReference.cache
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfoInputs.cache
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.AssemblyInfo.cs
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.CoreCompileInputs.cache
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.csproj.CopyComplete
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\refint\NowyRTS.dll
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.pdb
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\NowyRTS.genruntimeconfig.cache
+C:\Users\babci\Desktop\niko\godot\NowyRTS\.godot\mono\temp\obj\Debug\ref\NowyRTS.dll

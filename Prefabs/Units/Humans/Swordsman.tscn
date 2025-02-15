@@ -1,0 +1,171 @@
+[gd_scene load_steps=23 format=3 uid="uid://b0capsijnatpa"]
+
+[ext_resource type="PackedScene" uid="uid://17psngl7bfa2" path="res://Prefabs/Units/Unit.tscn" id="1_oeisc"]
+[ext_resource type="PackedScene" uid="uid://djat205cer2ia" path="res://Prefabs/Projectiles/MeleeProjectile.tscn" id="2_4luus"]
+[ext_resource type="Texture2D" uid="uid://b2i7robbopejq" path="res://Art/Units/Humans/Swordsman/SmallSwordsmanAttack.png" id="3_6akv8"]
+[ext_resource type="PackedScene" uid="uid://disp1cv42xqav" path="res://Prefabs/Abilities/Ability.tscn" id="4_fddux"]
+[ext_resource type="Texture2D" uid="uid://bwlveh32agc75" path="res://Art/Units/Humans/Swordsman/SmallSwordsmanIdle.png" id="4_qwqbt"]
+[ext_resource type="Texture2D" uid="uid://2di0bhdkdv15" path="res://Art/Units/Humans/Swordsman/SmallSwordsmanWalk.png" id="5_14pjj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehw6y"]
+atlas = ExtResource("3_6akv8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8feu"]
+atlas = ExtResource("3_6akv8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bc6k"]
+atlas = ExtResource("3_6akv8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjuy4"]
+atlas = ExtResource("3_6akv8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wl3y"]
+atlas = ExtResource("4_qwqbt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85r8k"]
+atlas = ExtResource("4_qwqbt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwlwk"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lajt7"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7aq3"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfwml"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7vgs"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dwdx"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kk5m"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ac2l"]
+atlas = ExtResource("5_14pjj")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1hydi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehw6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8feu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bc6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjuy4")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wl3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85r8k")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwlwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lajt7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7aq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfwml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7vgs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dwdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kk5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ac2l")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kyjun"]
+radius = 4.0
+
+[node name="Unit" instance=ExtResource("1_oeisc")]
+motion_mode = 1
+platform_on_leave = 2
+_MaxLife = 180.0
+Life = 180.0
+AttackTargetPursueRange = 100.0
+ProjectilePrefab = ExtResource("2_4luus")
+Flags = PackedStringArray("swordsman", "melee")
+
+[node name="SelectionBox" parent="." index="0"]
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 0.0
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(0, -18)
+sprite_frames = SubResource("SpriteFrames_1hydi")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_kyjun")
+
+[node name="ProjectileSpawn" parent="." index="3"]
+position = Vector2(0, -6)
+
+[node name="Ability2" parent="." index="4" instance=ExtResource("4_fddux")]
+Shortcut = "q"
+EnableQuickcast = true
+IsAbilityWithTarget = true
+
+[node name="Ability3" parent="." index="5" instance=ExtResource("4_fddux")]
+
+[node name="LifeBar" parent="." index="6"]
+offset_left = -6.0
+offset_top = -17.0
+offset_right = 42.0
+offset_bottom = -4.99997
+
+[node name="NavigationAgent2D" parent="." index="7"]
+radius = 4.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://6qwew28rjv48"]
+
+[ext_resource type="PackedScene" uid="uid://disp1cv42xqav" path="res://Prefabs/Abilities/Ability.tscn" id="1_aqfne"]
+[ext_resource type="Script" path="res://Scripts/Abilities/Build.cs" id="2_qk6pf"]
+
+[node name="Ability" instance=ExtResource("1_aqfne")]
+script = ExtResource("2_qk6pf")
+BuildingPrefab = null
+IsAbilityWithTarget = true

@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://cie8ng6txekcx"]
+
+[ext_resource type="PackedScene" uid="uid://xylthg5u37yd" path="res://Prefabs/Units/Building.tscn" id="1_bleeq"]
+[ext_resource type="Texture2D" uid="uid://c4micj11kf0xg" path="res://Art/MiniWorldSprites/Buildings/Cyan/CyanKeep.png" id="2_qw0pc"]
+[ext_resource type="PackedScene" uid="uid://bci7t7ku2pntr" path="res://Prefabs/Abilities/Train.tscn" id="3_shn4q"]
+[ext_resource type="PackedScene" uid="uid://c41pow1u17x25" path="res://Prefabs/Units/Humans/Peasant.tscn" id="4_vixk4"]
+[ext_resource type="Texture2D" uid="uid://crmtqvx8g80la" path="res://Art/Buttons/Humans/btn-peasant.png" id="5_a0da1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhara"]
+atlas = ExtResource("2_qw0pc")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_na2h0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dhara")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixrad"]
+size = Vector2(30, 30)
+
+[node name="Unit" instance=ExtResource("1_bleeq")]
+Life = 3000.0
+IsResourceDropOff = true
+Flags = PackedStringArray("castle", "building")
+
+[node name="SelectionBox" parent="." index="0"]
+z_index = 0
+offset_left = -18.0
+offset_top = -26.0
+offset_right = 18.0
+offset_bottom = 10.0
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_na2h0")
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_ixrad")
+
+[node name="NavigationAgent2D" parent="." index="5"]
+radius = 20.0
+neighbor_distance = 500.0
+max_neighbors = 10
+time_horizon_agents = 1.0
+avoidance_priority = 1.0
+debug_enabled = false
+
+[node name="Ability" parent="." index="6" instance=ExtResource("3_shn4q")]
+UnitPrefab = ExtResource("4_vixk4")
+ButtonTexture = ExtResource("5_a0da1")
+Shortcut = "q"
+QueueTime = 8.0
+GoldCost = 100.0

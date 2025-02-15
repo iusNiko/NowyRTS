@@ -1,0 +1,7 @@
+Area2D
+VBoxContainer
+CanvasLayer
+AnimatedSprite2D
+Node2D
+CharacterBody2D
+Camera2D

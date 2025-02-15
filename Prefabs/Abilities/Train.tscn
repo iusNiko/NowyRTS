@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bci7t7ku2pntr"]
+
+[ext_resource type="PackedScene" uid="uid://disp1cv42xqav" path="res://Prefabs/Abilities/Ability.tscn" id="1_te8lq"]
+[ext_resource type="Script" path="res://Scripts/Abilities/Train.cs" id="2_pawva"]
+
+[node name="Ability" instance=ExtResource("1_te8lq")]
+script = ExtResource("2_pawva")
+UnitPrefab = null
+IsAbilityToBeQueued = true
+QueueTime = 10.0

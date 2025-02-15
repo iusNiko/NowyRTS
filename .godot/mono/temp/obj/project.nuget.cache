@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tvl1ENQlL7jiZSf1h6RxC8zPLm5xCtgLR6q0plUE7SbMKdO/wutP6Lk12/iHzAh7vT0DXGvjAV9HX0tRttQjTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\babci\\Desktop\\niko\\godot\\NowyRTS\\NowyRTS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\babci\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
+    "C:\\Users\\babci\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\babci\\.nuget\\packages\\godotsharpeditor\\4.3.0\\godotsharpeditor.4.3.0.nupkg.sha512",
+    "C:\\Users\\babci\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\babci\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\babci\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

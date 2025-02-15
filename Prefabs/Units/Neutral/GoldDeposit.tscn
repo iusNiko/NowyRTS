@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://bujlr8304rb5s"]
+
+[ext_resource type="PackedScene" uid="uid://co6wlk413hbwe" path="res://Prefabs/Units/ResourceDeposit.tscn" id="1_4ww88"]
+[ext_resource type="Texture2D" uid="uid://c7b7ksjuh783g" path="res://Art/Units/Resources/GoldDeposit2.png" id="2_lgtio"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tt4sr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lgtio")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mxloo"]
+radius = 3.0
+height = 16.0
+
+[node name="Unit" instance=ExtResource("1_4ww88")]
+collision_layer = 2
+collision_mask = 257
+GoldAmount = 30.0
+
+[node name="SelectionBox" parent="." index="0"]
+z_index = 0
+offset_left = -10.0
+offset_top = -12.0
+offset_right = 10.0
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_tt4sr")
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, -3)
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_mxloo")
+
+[node name="LifeBar" parent="." index="4"]
+visible = false
+offset_left = -15.0
+offset_top = -24.0
+offset_right = 14.0
+offset_bottom = -19.0
+
+[node name="NavigationAgent2D" parent="." index="5"]
+avoidance_enabled = false
+radius = 10.0
+neighbor_distance = 500.0
+max_neighbors = 10
+time_horizon_agents = 1.0
+avoidance_priority = 1.0
+debug_enabled = false

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://disp1cv42xqav"]
+
+[ext_resource type="Script" path="res://Scripts/Abilities/Ability.cs" id="1_eh5gx"]
+[ext_resource type="Texture2D" uid="uid://cf07btf78ieyl" path="res://Art/EmptyButton.png" id="2_n5qww"]
+
+[node name="Ability" type="Node"]
+script = ExtResource("1_eh5gx")
+ButtonTexture = ExtResource("2_n5qww")

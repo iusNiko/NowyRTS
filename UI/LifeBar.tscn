@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxuq8p5fr70jw"]
+
+[ext_resource type="Script" path="res://Scripts/UI/LifeBar.cs" id="1_hr52t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lfax5"]
+bg_color = Color(0, 0, 0, 0.368627)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ea7af"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[node name="LifeBar" type="ProgressBar"]
+z_index = 4096
+offset_right = 115.0
+offset_bottom = 12.0
+scale = Vector2(0.25, 0.25)
+theme_override_styles/background = SubResource("StyleBoxFlat_lfax5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ea7af")
+show_percentage = false
+script = ExtResource("1_hr52t")

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://17psngl7bfa2"]
+
+[ext_resource type="Script" path="res://Scripts/Unit.cs" id="1_7h3xu"]
+[ext_resource type="PackedScene" uid="uid://cxuq8p5fr70jw" path="res://UI/LifeBar.tscn" id="2_1vkv4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_08fbh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0.963516, 0.217776, 1)
+
+[node name="Unit" type="CharacterBody2D"]
+collision_mask = 256
+script = ExtResource("1_7h3xu")
+
+[node name="SelectionBox" type="Panel" parent="."]
+visible = false
+z_index = -1
+offset_left = -9.0
+offset_top = -15.0
+offset_right = 8.0
+offset_bottom = 1.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_08fbh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4.5)
+
+[node name="ProjectileSpawn" type="Marker2D" parent="."]
+
+[node name="LifeBar" parent="." instance=ExtResource("2_1vkv4")]
+offset_left = -4.0
+offset_top = -12.0
+offset_right = 32.0
+offset_bottom = -4.0
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true
+radius = 5.0
+neighbor_distance = 250.0
+max_neighbors = 8
+time_horizon_agents = 0.05
+avoidance_priority = 0.1
+debug_enabled = true

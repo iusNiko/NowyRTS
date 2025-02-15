@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://co6wlk413hbwe"]
+
+[ext_resource type="PackedScene" uid="uid://17psngl7bfa2" path="res://Prefabs/Units/Unit.tscn" id="1_bbkid"]
+[ext_resource type="Script" path="res://Scripts/Units/ResourceDeposit.cs" id="2_kkat6"]
+
+[node name="Unit" instance=ExtResource("1_bbkid")]
+script = ExtResource("2_kkat6")
+GoldAmount = 0.0
+WoodAmount = 0.0
+Team = 0
+IsBuilding = true

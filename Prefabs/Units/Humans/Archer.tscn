@@ -1,0 +1,168 @@
+[gd_scene load_steps=23 format=3 uid="uid://dsveofqktuium"]
+
+[ext_resource type="PackedScene" uid="uid://17psngl7bfa2" path="res://Prefabs/Units/Unit.tscn" id="1_ic2td"]
+[ext_resource type="Texture2D" uid="uid://4s0oapekkfd5" path="res://Art/Units/Humans/Archer/ArcherAttack.png" id="2_asx2l"]
+[ext_resource type="PackedScene" uid="uid://dhbbynvylykuu" path="res://Prefabs/Projectiles/Arrow.tscn" id="2_hxv0l"]
+[ext_resource type="Texture2D" uid="uid://drhs6tj2t0e46" path="res://Art/Units/Humans/Archer/ArcherIdle.png" id="3_gp7t4"]
+[ext_resource type="Texture2D" uid="uid://rlu56cr5mwk3" path="res://Art/Units/Humans/Archer/ArcherRun.png" id="5_oxpip"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epejv"]
+atlas = ExtResource("2_asx2l")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ym4d4"]
+atlas = ExtResource("2_asx2l")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgs3y"]
+atlas = ExtResource("2_asx2l")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ruicn"]
+atlas = ExtResource("2_asx2l")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g15or"]
+atlas = ExtResource("2_asx2l")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7hxy"]
+atlas = ExtResource("3_gp7t4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kf7m"]
+atlas = ExtResource("3_gp7t4")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5yfkt"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkyau"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq75q"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pr5g5"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyh3a"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bns6l"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kav4i"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ge3v3"]
+atlas = ExtResource("5_oxpip")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aeb7q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epejv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ym4d4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgs3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ruicn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g15or")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7hxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kf7m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5yfkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkyau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq75q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pr5g5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyh3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bns6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kav4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ge3v3")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7w3nk"]
+radius = 4.0
+
+[node name="Unit" instance=ExtResource("1_ic2td")]
+_MaxLife = 40.0
+Life = 40.0
+_AttackDamage = 20.0
+_AttackRange = 100.0
+ProjectilePrefab = ExtResource("2_hxv0l")
+Flags = PackedStringArray("archer", "ranged")
+
+[node name="SelectionBox" parent="." index="0"]
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 4.0
+offset_bottom = 2.0
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_aeb7q")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_7w3nk")
+
+[node name="ProjectileSpawn" parent="." index="3"]
+position = Vector2(3, -7)
+
+[node name="LifeBar" parent="." index="4"]
+offset_left = -5.0
+offset_top = -16.0
+offset_right = 39.0
+
+[node name="NavigationAgent2D" parent="." index="5"]
+debug_enabled = true
